@@ -1,24 +1,32 @@
-var webpack = require('webpack');
-var path = require('path');
+'use strict';
 
-var BUILD_DIR = path.resolve(__dirname, 'src/client/public');
-var APP_DIR = path.resolve(__dirname, 'src/client/app');
+const path = require('path');
+const args = require('minimist')(process.argv.slice(2));
 
-var config = {
-  entry: APP_DIR + '/index.jsx',
-  output: {
-    path: BUILD_DIR,
-    filename: 'bundle.js'
-  },
-  module : {
-    loaders : [
-      {
-        test : /\.jsx?/,
-        include : APP_DIR,
-        loader : 'babel'
-      }
-    ]
-  }
-};
+// List of allowed environments
+const allowedEnvs = ['dev', 'dist', 'test'];
 
-module.exports = config;
+// Set the correct environment
+let env;
+if (args._.length > 0 && args._.indexOf('start') !== -1) {
+  env = 'test';
+} else if (args.env) {
+  env = args.env;
+} else {
+  env = 'dev';
+}
+process.env.REACT_WEBPACK_ENV = env;
+
+/**
+ * Build the webpack configuration
+ * @param  {String} wantedEnv The wanted environment
+ * @return {Object} Webpack config
+ */
+function buildConfig(wantedEnv) {
+  let isValid = wantedEnv && wantedEnv.length > 0 && allowedEnvs.indexOf(wantedEnv) !== -1;
+  let validEnv = isValid ? wantedEnv : 'dev';
+  let config = require(path.join(__dirname, 'cfg/' + validEnv));
+  return config;
+}
+
+module.exports = buildConfig(env);
