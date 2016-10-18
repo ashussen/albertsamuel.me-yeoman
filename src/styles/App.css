@@ -137,3 +137,30 @@ a[data-scroll-name = "#1"] ~ .wide.image .container .title.big {
   background-image: linear-gradient(to right,#4c586f, rgba(255,255,255,0));
   opacity: .6; 
 }
+.portfolio .s-title {
+  line-height: 1.2;
+  margin-bottom: 15px;
+  color: #333;
+  font-family: 'gotham rounded',sans-serif;
+  text-align: center;
+  font-size: 36px;
+  display: inline-block;
+}
+.portfolio .s-title .s-font-title:before,
+.portfolio .s-title .s-font-title:after {
+  content: ' ';
+  position: absolute;
+  top: 50%;
+  height: 2px;
+  width: 80px;
+  margin: 0 10px;
+  display: inline-block;
+  zoom: 1;
+  background: #333;
+}
+.portfolio .s-title .s-font-title:before {
+  right:100%;
+}
+.portfolio .s-title .s-font-title:after {
+  left:100%;
+}
