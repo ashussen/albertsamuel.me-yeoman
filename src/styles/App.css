@@ -7,7 +7,6 @@ body {
 .index img {
   margin: 40px auto;
   border-radius: 4px;
-  background: #fff;
   display: block;
 }
 
@@ -140,7 +139,7 @@ a[data-scroll-name = "#1"] ~ .wide.image .container .title.big {
 .portfolio .s-title {
   line-height: 1.2;
   margin-bottom: 15px;
-  color: #333;
+  color: #4C586F;
   font-family: 'gotham rounded',sans-serif;
   text-align: center;
   font-size: 36px;
@@ -156,11 +155,18 @@ a[data-scroll-name = "#1"] ~ .wide.image .container .title.big {
   margin: 0 10px;
   display: inline-block;
   zoom: 1;
-  background: #333;
+  background: #4C586F;
 }
 .portfolio .s-title .s-font-title:before {
   right:100%;
 }
 .portfolio .s-title .s-font-title:after {
   left:100%;
+}
+.portfolio .s-font-heading a,
+.portfolio .s-font-heading a:active,
+.portfolio .s-font-heading a:hover,
+.portfolio .s-font-heading a:focus,
+.portfolio .s-font-heading a:visited {
+  color: #3E3E3B;
 }

@@ -2,60 +2,103 @@ var React = require('react');
 
 var Portfolio = React.createClass({
   render: function() {
+      var ubuntuFont = {
+        fontFamily: 'ubuntu',
+      };
+      var gunMetal = {color: '#3E3E3B'}
+      var denim = {color: '#4C586F'}
+      var frenchBlue = {color: '#A2AAB0'}
+      var cashmere = {color: '#CBC5C1'}
       return (
-      <li className="slide portfolio" style={{background:'white'}}>
+      <li className="slide portfolio" style={{background:'#EBECED'}}>
         <div className="s-rows-section s-section">
           <div className="container">
             <div className="columns sixteen">
               <div className="s-title-group ">
                 <div className="s-title ">
                   <div className="s-component s-text">
-                    <h2 className="s-component-content s-font-title">
+                    <h2 className="s-component-content s-font-title" style={ubuntuFont}>
                       <p>Here's what I've done so far.</p>
                     </h2>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="s-layout-mediaLeft s-repeatable">
+            <div className="s-layout-mediaLeft s-repeatable" style={ubuntuFont}>
               <div data-sorting-index="0" className=" s-repeatable-item">
                 <div className="clearfix s-rva">
                   <div className="s-rva-media offset-one five columns">
-                    <div className="s-item-media-group">
-                      <div className="s-component s-media ">
-                        <span>
-                          <div className="s-component-content">
-                            <img alt="" title="" data-description="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" className="lazyload " data-src="//res.cloudinary.com/hrscywv4p/image/upload/c_limit,f_auto,h_1440,q_90,w_720/v1/9621/grh9rt2nsz08wyyzcy6g_ru4ode.png" data-sizes="auto" />
-                            <noscript><img alt="" title="" data-description="" src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,f_auto,h_1440,q_90,w_720/v1/9621/grh9rt2nsz08wyyzcy6g_ru4ode.png" className="" /></noscript>
-                          </div>
-                        </span>
-                      </div>
+                    <div className="s-component s-media ">
+                        <img alt="" title="" data-description="" src="../images/SydneyTools.png" className="lazyload"/>
                     </div>
                   </div>
                   <div className="s-rva-text undefined nine columns">
-                    <div className="s-item-text-group half-offset-left">
-                      <div className="s-item-title">
-                        <div className="s-component s-text">
-                          <h3 className="s-component-content s-font-heading">
-                            <p><a target="_blank" href="http://www.cloud.google.com/">Google Cloud</a></p>
-                          </h3>
+                    <div className="s-item-title">
+                      <div className="s-component s-text">
+                        <h3 className="s-component-content s-font-heading" style={gunMetal}>
+                          <p><a target="_blank" href="https://sydneytools.com.au">Sydney Tools</a></p>
+                        </h3>
+                      </div>
+                    </div>
+                    <div className="s-item-subtitle">
+                      <div className="s-component s-text">
+                        <h6 className="s-component-content s-font-body" style={denim}>
+                          <strong>Junior Web Developer</strong>, <em>Joined November 2015</em>
+                        </h6>
+                      </div>
+                    </div>
+                    <div className="s-item-text">
+                      <div className="s-component s-text">
+                        <div className="s-component-content s-font-body">
+                          <p style={frenchBlue}><strong>Roseland, NSW</strong></p>
+                          <p style={gunMetal}>
+                            Sydney Tools gave me an opportunity to learn and grow in a programming environment. My first task was to recreate Sydney Tools's online store interface as it becomes responsive website.
+                            The design was created with Material Design principles, and applied using HTML, CSS and Javascript. Some JS framework also in use, such as JQuery, AngularJS, HammerJS, etc.
+                            <br /><br />
+                            Followed by creating enormous automation function for promotion and product listing. This is the fun part that I enjoy the most.
+                            I am grateful for the  time I spent in Sydney Tools as cultivate my programming skills.
+                          </p>
                         </div>
                       </div>
-                      <div className="s-item-subtitle">
-                        <div className="s-component s-text">
-                          <h6 className="s-component-content s-font-body">
-                            <p><strong><strong>Software Engineer</strong>, <em>Since</em><em> Fall 2015</em></strong></p>
-                          </h6>
-                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="s-layout-mediaLeft s-repeatable" style={ubuntuFont}>
+              <div data-sorting-index="0" className=" s-repeatable-item">
+                <div className="clearfix s-rva">
+                  <div className="s-rva-media offset-one five columns">
+                    <div className="s-component s-media ">
+                        <img alt="" title="" data-description="" src="../images/CVIG.png" className="lazyload"/>
+                    </div>
+                  </div>
+                  <div className="s-rva-text undefined nine columns">
+                    <div className="s-item-title">
+                      <div className="s-component s-text">
+                        <h3 className="s-component-content s-font-heading" style={gunMetal}>
+                          <p><a target="_blank" href="https://sydneytools.com.au">Capital Value International Group</a></p>
+                        </h3>
                       </div>
-                      <div className="s-item-text">
-                        <div className="s-component s-text">
-                          <div className="s-component-content s-font-body">
-                            <p>New York, New York</p>
-                            <p> </p>
-                            <p>I am currently working to build amazing user experiences for Cloud users.</p>
-                            <p> </p>
-                          </div>
+                    </div>
+                    <div className="s-item-subtitle">
+                      <div className="s-component s-text">
+                        <h6 className="s-component-content s-font-body" style={denim}>
+                          <strong>Freelance Web Developer</strong>, <em>Finished on January 2016</em>
+                        </h6>
+                      </div>
+                    </div>
+                    <div className="s-item-text">
+                      <div className="s-component s-text">
+                        <div className="s-component-content s-font-body">
+                          <p style={frenchBlue}><strong>Hurstville, NSW</strong></p>
+                          <p style={gunMetal}>
+                            Sydney Tools gave me an opportunity to learn and grow in a programming environment. My first task was to recreate Sydney Tools's online store interface as it becomes responsive website.
+                            The design was created with Material Design principles, and applied using HTML, CSS and Javascript. Some JS framework also in use, such as JQuery, AngularJS, HammerJS, etc.
+                            <br /><br />
+                            Followed by creating enormous automation function for promotion and product listing. This is the fun part that I enjoy the most.
+                            I am grateful for the  time I spent in Sydney Tools as cultivate my programming skills.
+                          </p>
                         </div>
                       </div>
                     </div>
