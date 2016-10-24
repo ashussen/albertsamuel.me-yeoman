@@ -3,6 +3,7 @@ require('styles/App.css');
 var Navbar = require('components/Navbar.js');
 var MyNameIs = require('components/MyNameIs.js');
 var Portfolio = require('components/Portfolio.js');
+var Footer = require('components/Footer.js');
 
 import React from 'react';
 
@@ -14,6 +15,7 @@ class AppComponent extends React.Component {
         <ul className="slides">
         	<MyNameIs />
           <Portfolio />
+          <Footer />
         </ul>
       </div>
     );

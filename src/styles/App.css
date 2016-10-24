@@ -134,7 +134,7 @@ a[data-scroll-name = "#1"] ~ .wide.image .container .title.big {
   bottom: 0;
   left: 0;
   background-image: linear-gradient(to right,#4c586f, rgba(255,255,255,0));
-  opacity: .6; 
+  opacity: .6;
 }
 .portfolio .s-title {
   line-height: 1.2;
@@ -160,13 +160,17 @@ a[data-scroll-name = "#1"] ~ .wide.image .container .title.big {
 .portfolio .s-title .s-font-title:before {
   right:100%;
 }
-.portfolio .s-title .s-font-title:after {
+.portfolio .s-title .s-font-title:after{
   left:100%;
 }
 .portfolio .s-font-heading a,
 .portfolio .s-font-heading a:active,
 .portfolio .s-font-heading a:hover,
 .portfolio .s-font-heading a:focus,
-.portfolio .s-font-heading a:visited {
+.portfolio .s-font-heading a:visited{
   color: #3E3E3B;
+}
+
+.footer .s-repeatable .s-image img {
+  border-radius: 50%;
 }
